@@ -1,0 +1,143 @@
+body{
+    font-style: italic;
+    margin: 0px;
+    line-height: 1.6;
+animation: fadeIn 1.5s ease-in-out;
+}
+header {
+    background-color:#997C70;
+    position :absolute;
+    top: 0px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+}
+nav{
+    background-color: #997C70; 
+    top: 0;
+    height: 80px;
+}
+nav img{
+    width: 125px;
+    height: 75px;
+}
+nav a{
+    text-decoration: none;
+    color: #F7EED3;
+    padding: 10px;
+    border: 1px solid #F7EED3;
+    border-radius: 5px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 1s ease, background-color 1s ease;
+}
+nav li :hover{
+    background-color: #F7EED3;
+    color: black !important;
+    border: 1px solid #F7EED3;
+    animation: boxShadow 0.3 ease;
+}
+
+nav ol :hover{
+transform: scale(1.01);
+border-radius:  15px;
+}
+
+ol{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    list-style: none;
+    align-items: center;
+    font-style: italic;
+    font-size: 20px;
+    flex-wrap: wrap;
+}
+nav li{
+    background-color: #997C70;
+}
+.wsl{
+    font-family: 'Brush Script MT', cursive !important;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    color: #52423e;
+    background-color: #F6E6D0;
+}
+
+.main2{
+    border-radius: 15px !important;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+.img1{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4)
+}
+form {
+  max-width: auto;
+  margin: 0 auto;
+  background-color: #efe6dd !important;
+  border-radius: 15px;
+  transform: scale(0.9);
+    animation: popUp 1.2s ease forwards;
+}
+form input {
+  background-color: whitesmoke !important;
+  transition: background-color 0.3s, transform 0.3s;
+}
+form input:hover {
+    background-color: #f7f0ef !important;
+    transform: scale(1.02);
+}
+.btn {
+    background-color: whitesmoke !important;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #F7EED3 !important;
+    color: black !important;
+    transform: scale(1.05);
+}
+
+footer {
+    display: flex; 
+    background-color:#997C70;
+    position :relative;
+    padding: 5px;
+    padding-top: 10PX;
+    justify-content: center;
+    align-content: center;
+    animation: fadeIn 1s ease-in-out;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.9);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
